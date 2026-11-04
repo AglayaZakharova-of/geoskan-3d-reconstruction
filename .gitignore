@@ -1,0 +1,44 @@
+# 1. Виртуальные окружения Python
+.venv/
+venv/
+env/
+
+# 2. Тяжелые данные (ROS 2 bags, конвертированные датасеты)
+datasets/
+*.db3
+*.mcap
+*.bag
+
+# 3. Тяжелые 3D-файлы (Облака точек и Меши)
+*.pcd
+*.ply
+*.stl
+*.obj
+*.glb
+*.gltf
+*.txt
+*.yaml
+*.csv
+
+# 3.1 txt и yaml, которые нужны
+!configs/exp1_baseline.yaml
+!results/scripts/MARS_LVIG_baseline.yaml
+
+# 4. Системные папки ROS 2 (если собираете пакеты)
+build/
+install/
+log/
+
+# 5. Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 6. Настройки IDE и ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 7. Логи (чтобы не засорять репозиторий)
+*.log
